@@ -174,71 +174,8 @@ textarea {
 .invisible {
   visibility: hidden;
 }
-body
-{
-  margin:0;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 400px auto;
-  background-color:rgb(255, 242, 230);
 
-}
-.grid-item1{
-  /*border: 1px solid rgb(185, 185, 146);*/
-  padding:30px 0px;
-  padding-left: 20px;
-  margin:0;
-  font-size:30px;
-  text-align: center;
-  color:black;
-}
-.grid-item2{
-  /*border: 1px solid rgb(185, 185, 146);*/
-  padding:25px 20px;
-  padding-left:200px;
-  margin:0;
-  font-size: 30px;
-  text-align: center;
-  color:white;
-  float:right;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  color:white;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  list-style-type: none;
-  color:black;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-.droplink
-{
-  text-decoration: none;
-  color:black;
-  padding-right: 12px;
-  float:right;
-}
-.grid-container2 {
-   display:grid;
-   grid-template-columns:auto;
-   grid-template-rows:500px;
-  background-image:url(../img/digitalschool.jpg);
-  object-fit: cover;
-}
 
 /*
 * Clearfix: contain floats
