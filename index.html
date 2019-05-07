@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/text.css">
   <link rel="stylesheet" href="css/960_12_col.css">
+  
+  <!--<link rel="stylesheet" href="css/style1.css">-->
    </head>
 
 <body>
@@ -26,7 +28,7 @@
 
   <!-- Add your site or application content here -->
   <header>
-  <div class="grid-container">
+  <div class="grid-container" id="myheader">
    <div class="grid-item1">Codecademy</div>
    <div class="grid-item2">
     <div class="dropdown">
@@ -40,7 +42,7 @@
   </ul>
   </div>
   <div class="dropdown">
-  <a href="#playground">CodePlayGround</a>
+  <a href="#playground">Code PlayGround</a>
     <ul class="dropdown-content">
       <li>MyCodes</li>
       <li>Examples</li>
@@ -55,7 +57,7 @@
     </ul>
 </div>
   <div class="dropdown">
-  <a href="#learners">TopLearners</a>
+  <a href="#learners">Top Learners</a>
     <ul class="dropdown-content">
       <li>GlobalLeaderBoard</li>
       <li>MyScores</li>
@@ -75,37 +77,34 @@
 </div>
 </header>
   <div class="grid-container2">
-    <button class="btn">Start Learning Now</button>
+    
   </div>
 <div class="container_12">
     <section class="grid_4">
       <h3>C++ tutorial</h3>
-      <p><a href="https://www.sololearn.com/Course/CPlusPlus/" target="_blank"><img src="img/c++.png" alt="C++tutorial"/></a>
-
-Our C++ tutorial covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, objects, inheritance, and polymorphism.
+      <p class="text"><a href="https://www.sololearn.com/Course/CPlusPlus/" target="_blank"><img src="img/c++.png" alt="C++tutorial"/></a>
+      This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to C++.Tutorial includes over 80 lessons.                              
   </p>
   </section>
 
     <section class="grid_4">
       <h3 >Python tutorial</h3>
-      <p><a href="https://www.sololearn.com/Course/Python/" target="_blank">
+      <p class="text"><a href="https://www.sololearn.com/Course/Python/" target="_blank">
 <img src="img/Python.png" alt="Python"/></a>
-Learn Python, one of today's most in-demand programming languages on-the-go. Practice writing Python code within the app, collect points, and show off your skills. 
+Python is a general-purpose and high-level programming language.This tutorial is designed for programmers who need to learn Python programming language from scratch.
+ 
  </p>
    </section>
  <section class="grid_4">
       <h3>Java tutorial</h3>
-      <p><a href="https://www.sololearn.com/Course/Java/" target="_blank">
-   <img src="img/java.png" alt="Java"/></a><br>
-
-                        With our interactive Java course, you’ll learn object-oriented Java programming and have the ability to write clear and valid code in almost no time at all.
-                    
-    </section>
-
+      <p class="text"><a href="https://www.sololearn.com/Course/Java/" target="_blank">
+   <img src="img/java.png" alt="Java"/></a>With our interactive Java course,you'll learn object-oriented java programming and have the ability to write clear and valid code in almost no time at all.
+  </section>
 </div>
 <div class="grid-container4">
   <p id="last">Learn Playing.Play Learning</p>
   </div>
+
   <footer>
 <div class="grid-container3" >
     <div>
@@ -118,26 +117,20 @@ Learn Python, one of today's most in-demand programming languages on-the-go. Pra
              <li>ContactUs</li>
              <li>NewsandMedia</li>
          </ul>
-        
     </div>
-
         <div >
          <h3>Follow us on</h3>
    <ul class="img3" style="list-style-type: none;">
      <li class="img2"><a href="www.facebook.com" ><img src="./img/facebook.png" alt="facebook" style="width:40px;height:40px" />&nbsp;@Codecademy</a></li>
      <li class="img2"><a href="www.google+.com" ><img src="./img/googleplus.png" alt="googleplus" style="width:40px;height:40px" />&nbsp;+Codecademy</a></li>
      <li class="img2"><a href="www.instagram.com" ><img src="./img/instagram.jpeg" alt="instagram" style="width:40px;height:40px"/>&nbsp;Codecademy</a></li>
-    
    </ul>
-        
       </div>
-
     <div>
-         <h3>EMAIL US</h3>
+         <h3>Email us</h3>
          <ul class="meta">
              <li ><a href="mailto:codecademy@in.com" style="text-decoration: none">codecademy@in.com</a></li>
          </ul>
-        
     </div>
   </div>
 </footer>
@@ -153,6 +146,19 @@ Learn Python, one of today's most in-demand programming languages on-the-go. Pra
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myheader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > grid-container) {
+    header.classList.add("grid-container");
+  } else {
+    header.classList.remove("grid-container");
+  }
+}</script>
 </body>
 
 </html>
